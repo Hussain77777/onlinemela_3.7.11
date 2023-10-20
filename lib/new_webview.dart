@@ -176,7 +176,7 @@ Page resource error:
       onWillPop: () async => false,
       child: SafeArea(
         child: Scaffold(
-          bottomNavigationBar: Container(
+        /*  bottomNavigationBar: Container(
             height: 80,
             width: double.infinity,
             decoration: BoxDecoration(
@@ -240,17 +240,7 @@ Page resource error:
                     ),
                     label: ""),
               ],
-              /*    selectedLabelStyle: GoogleFonts.poppins(
-                color: Colors.black,
-                fontSize: 8,
-              ),
-              type: BottomNavigationBarType.fixed,
-              unselectedLabelStyle: GoogleFonts.poppins(
-                color: Colors.black,
-                fontSize: 7,
-              ),
-              unselectedItemColor: Colors.grey.shade500,
-              selectedItemColor: Colors.black,*/
+
               onTap: (i) {
                 setState(() {
                   index = i;
@@ -258,7 +248,7 @@ Page resource error:
               },
               currentIndex: index,
             ),
-          ),
+          ),*/
           body: WebViewWidget(controller: _controller),
           floatingActionButton: favoriteButton(),
         ),
