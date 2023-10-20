@@ -250,7 +250,7 @@ Page resource error:
             ),
           ),*/
           body: WebViewWidget(controller: _controller),
-          floatingActionButton: favoriteButton(),
+         // floatingActionButton: favoriteButton(),
         ),
       ),
     );
