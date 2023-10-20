@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.onlinemela">
+    package="com.example.grostore">
    <application
-        android:label="Genius"
+        android:label="Grostore"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
