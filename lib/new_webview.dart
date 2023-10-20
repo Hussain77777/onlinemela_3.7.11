@@ -157,7 +157,7 @@ Page resource error:
           );
         },
       )
-      ..loadRequest(Uri.parse("https://onlinemela.pk/"));
+      ..loadRequest(Uri.parse("https://gostore.mirhasoft.com/"));
 
     // #docregion platform_features
     if (controller.platform is AndroidWebViewController) {
@@ -250,7 +250,7 @@ Page resource error:
             ),
           ),*/
           body: WebViewWidget(controller: _controller),
-          floatingActionButton: favoriteButton(),
+        //  floatingActionButton: favoriteButton(),
         ),
       ),
     );
