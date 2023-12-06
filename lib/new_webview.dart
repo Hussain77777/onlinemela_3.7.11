@@ -157,7 +157,7 @@ Page resource error:
           );
         },
       )
-      ..loadRequest(Uri.parse("https://gostore.mirhasoft.com/"));
+      ..loadRequest(Uri.parse("https://donation.laravelscript.net/donate"));
 
     // #docregion platform_features
     if (controller.platform is AndroidWebViewController) {
@@ -176,79 +176,7 @@ Page resource error:
       onWillPop: () async => false,
       child: SafeArea(
         child: Scaffold(
-        /*  bottomNavigationBar: Container(
-            height: 80,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.red,
-              //borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15)),
-            ),
-            child: BottomNavigationBar(
-              items: [
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_back_ios_rounded,
-                        color: Colors.black,
-                      ),
-                    ),
-                    label: ""),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        color: Colors.black,
-                      ),
-                    ),
-                    label: ""),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        _controller.loadRequest(Uri.parse(
-                            "https://afroochic.com/pages/vip-boutique/vip-boutique-xbmwjpna"));
-                      },
-                      icon: Icon(
-                        Icons.star,
-                        color: Colors.black,
-                      ),
-                    ),
-                    label: ""),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        _controller.loadRequest(Uri.parse(
-                            "https://afroochic.com/pages/nouveau/nouveau-mgmqogaq"));
-                      },
-                      icon: Icon(
-                        Icons.car_repair,
-                        color: Colors.black,
-                      ),
-                    ),
-                    label: ""),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        _controller
-                            .loadRequest(Uri.parse("http://www.afroochic.com"));
-                      },
-                      icon: Icon(
-                        Icons.home,
-                        color: Colors.black,
-                      ),
-                    ),
-                    label: ""),
-              ],
 
-              onTap: (i) {
-                setState(() {
-                  index = i;
-                });
-              },
-              currentIndex: index,
-            ),
-          ),*/
           body: WebViewWidget(controller: _controller),
         //  floatingActionButton: favoriteButton(),
         ),
